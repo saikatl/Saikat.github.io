@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saikat Lahiri | Digital CV</title>
+<style>
+  :root {
+    --primary: #4285F4;
+    --bg-color: #f8f9fa;
+    --text-main: #202124;
+    --text-light: #5f6368;
+    --card-bg: #ffffff;
+  }
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    max-width: 800px;
+    width: 100%;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--primary);
+  }
+  .header p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+  }
+  .card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid transparent;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--primary);
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  .metrics {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .metric-badge {
+    background: #e8f0fe;
+    color: #1967d2;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .contact-links a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--text-main);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    transition: background 0.2s;
+  }
+  .contact-links a:hover {
+    background-color: var(--primary);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Saikat Lahiri</h1>
+    <p>Executive Sales & Business Development Leader | Cloud & GenAI</p>
+    <div class="contact-links">
+      <a href="mailto:saikat.lahiri@gmail.com">Email Me</a>
+      <a href="#">LinkedIn Profile</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Executive Summary</h2>
+    <p>Results-driven Sales and Business Development Leader with 20+ years of global experience driving top-line and bottom-line growth. Proven expertise in solution selling across GenAI, Analytics, AI/ML, and Security. Adept at managing C-level engagements and orchestrating cross-functional teams to deliver value to Enterprise Digital Natives. <strong>L200 certified Google GenAI Ambassador.</strong></p>
+    <div class="metrics">
+      <span class="metric-badge">20+ Years Exp.</span>
+      <span class="metric-badge">$XXmn+ Deal Sizes</span>
+      <span class="metric-badge">125% Quota Attainment (2025)</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Google Cloud | Key Account Leader & Gemini Enterprise Lead</h2>
+    <p><em>2021 – Present</em></p>
+    <ul>
+      <li><strong>GTM Leadership:</strong> Scaled Gemini Enterprise for Digital Natives from $0 to $XM ARR within 6 months.</li>
+      <li><strong>Consistent Overachievement:</strong> Top 10% significant performer (125% in 2025, 102% in 2023).</li>
+      <li><strong>Deal Structuring:</strong> Closed the largest Digital Native deal ($XXM) and largest Travel Tech in 2025.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>AWS | Business Development Lead</h2>
+    <p><em>2016 – 2021</em></p>
+    <ul>
+      <li><strong>Market Penetration:</strong> Spearheaded AWS penetration into Tier-2 cities across India.</li>
+      <li><strong>Sales Excellence:</strong> Managed the second-largest quota in India ($XXMn), averaging 107% attainment.</li>
+      <li><strong>Complex Negotiations:</strong> Secured largest multi-year contracts across APAC, including three first-ever worldwide contracts.</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
