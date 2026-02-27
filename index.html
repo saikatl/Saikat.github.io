@@ -3,137 +3,290 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saikat Lahiri | Digital CV</title>
+<title>Saikat Lahiri | Executive Sales & Business Development Leader</title>
 <style>
   :root {
     --primary: #4285F4;
+    --primary-dark: #3367d6;
     --bg-color: #f8f9fa;
     --text-main: #202124;
     --text-light: #5f6368;
     --card-bg: #ffffff;
+    --border-color: #e0e0e0;
   }
+  
   body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.6;
     margin: 0;
-    padding: 2rem;
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
   }
+  
   .container {
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
   }
+  
   .header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
+  
   .header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--primary);
+    letter-spacing: -0.5px;
   }
-  .header p {
-    font-size: 1.2rem;
+  
+  .contact-info {
+    font-size: 1.1rem;
     color: var(--text-light);
     margin-top: 0.5rem;
   }
+  
+  .contact-info a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
   .card {
     background: var(--card-bg);
     border-radius: 12px;
     padding: 2rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 4px solid transparent;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+    border-left: 5px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-left-color 0.3s ease;
   }
+  
   .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-left: 4px solid var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-left: 5px solid var(--primary);
   }
+  
   .card h2 {
     margin-top: 0;
-    font-size: 1.5rem;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--text-main);
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
   }
-  .metrics {
+  
+  .job-header {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: baseline;
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
   }
-  .metric-badge {
-    background: #e8f0fe;
-    color: #1967d2;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+  
+  .job-title {
+    font-size: 1.25rem;
     font-weight: 600;
-    font-size: 0.9rem;
+    color: var(--primary-dark);
+    margin: 0;
   }
-  .contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+  
+  .job-date {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
   }
-  .contact-links a {
-    text-decoration: none;
-    color: white;
-    background-color: var(--text-main);
-    padding: 0.5rem 1.5rem;
-    border-radius: 25px;
-    transition: background 0.2s;
+  
+  .competency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
   }
-  .contact-links a:hover {
-    background-color: var(--primary);
+  
+  .competency-box h3 {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .job-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 2rem 0;
+  }
+
+  /* Responsive styling for mobile */
+  @media (max-width: 600px) {
+    .job-header {
+      flex-direction: column;
+    }
+    .job-date {
+      margin-top: 0.25rem;
+    }
   }
 </style>
 </head>
 <body>
 
 <div class="container">
+  
+  <!-- Header Section -->
   <div class="header">
     <h1>Saikat Lahiri</h1>
-    <p>Executive Sales & Business Development Leader | Cloud & GenAI</p>
-    <div class="contact-links">
-      <a href="mailto:saikat.lahiri@gmail.com">Email Me</a>
-      <a href="#">LinkedIn Profile</a>
+    <div class="contact-info">
+      Phone: +91-8800943163 | 
+      Email: <a href="mailto:saikat.lahiri@gmail.com">saikat.lahiri@gmail.com</a> | 
+      LinkedIn: <a href="https://www.linkedin.com/in/lahirisaikat/">Saikat Lahiri</a>
     </div>
   </div>
 
+  <!-- Executive Summary -->
   <div class="card">
     <h2>Executive Summary</h2>
-    <p>Results-driven Sales and Business Development Leader with 20+ years of global experience driving top-line and bottom-line growth. Proven expertise in solution selling across GenAI, Analytics, AI/ML, and Security. Adept at managing C-level engagements and orchestrating cross-functional teams to deliver value to Enterprise Digital Natives. <strong>L200 certified Google GenAI Ambassador.</strong></p>
-    <div class="metrics">
-      <span class="metric-badge">20+ Years Exp.</span>
-      <span class="metric-badge">$XXmn+ Deal Sizes</span>
-      <span class="metric-badge">125% Quota Attainment (2025)</span>
+    <p>Results-driven Sales and Business Development Leader with 20+ years of global experience driving top-line and bottom-line growth. Proven expertise in solution selling across GenAI, Analytics, AI/ML, and Security, successfully leading and winning complex, multi-million dollar deals ($XXmn+). Adept at managing C-level engagements, scaling channel ecosystems, and orchestrating cross-functional teams to deliver exceptional value to Enterprise Digital Natives, SMBs, and mid-sized enterprises. <strong>L200 certified Google GenAI Ambassador.</strong></p>
+  </div>
+
+  <!-- Core Competencies -->
+  <div class="card">
+    <h2>Core Competencies</h2>
+    <div class="competency-grid">
+      <div class="competency-box">
+        <h3>Sales & Revenue Generation</h3>
+        <p>Enterprise Account Management, Complex Deal Structuring, Multi-Million Quota Attainment, Solution Selling.</p>
+      </div>
+      <div class="competency-box">
+        <h3>Leadership & Strategy</h3>
+        <p>Go-To-Market (GTM) Strategy, Cross-Functional Team Leadership, CXO Stakeholder Management, Strategic Partnerships.</p>
+      </div>
+      <div class="competency-box">
+        <h3>Business Development</h3>
+        <p>New Market Penetration, Pipeline Generation, Contract Negotiation, Digital Transformation.</p>
+      </div>
     </div>
   </div>
 
+  <!-- Professional Experience -->
   <div class="card">
-    <h2>Google Cloud | Key Account Leader & Gemini Enterprise Lead</h2>
-    <p><em>2021 – Present</em></p>
+    <h2>Professional Experience</h2>
+
+    <!-- Google Cloud -->
+    <div class="job-header">
+      <div class="job-title">Google Cloud, India | Key Account Leader & Gemini Enterprise Lead (Digital Natives)</div>
+      <div class="job-date">2021 – Present</div>
+    </div>
     <ul>
-      <li><strong>GTM Leadership:</strong> Scaled Gemini Enterprise for Digital Natives from $0 to $XM ARR within 6 months.</li>
-      <li><strong>Consistent Overachievement:</strong> Top 10% significant performer (125% in 2025, 102% in 2023).</li>
-      <li><strong>Deal Structuring:</strong> Closed the largest Digital Native deal ($XXM) and largest Travel Tech in 2025.</li>
+      <li><strong>GTM Leadership & Revenue Growth:</strong> Established and led the GTM strategy for Gemini Enterprise for Digital Natives in India, scaling the business from $0 to $XM ARR within 6 months.</li>
+      <li><strong>Quota Overachievement:</strong> Consistently exceeded multi-million dollar quota targets (105% in 2021, 95% in 2022, 102% in 2023, 97% in 2024, 125% in 2025), managing a $XXM revenue quota and $XM bookings quota. Recognized as a top 10% significant performer.</li>
+      <li><strong>Strategic Deal Structuring:</strong> Orchestrated cross-functional teams to win $XM deals within highly competitive, large enterprise Digital Native accounts. Delivered the highest number of Enterprise bookings and GenAI startup win migrations in 2024. Closed the largest Digital Native deal ($XXM), largest Travel Tech, in 2025.</li>
+      <li><strong>Executive Engagement:</strong> Elevated relationships with C-suite executives (Founders, CTOs, CFOs) by quantifying top and bottom-line impact. Developed the GenAI partnership roadmap for major Indian Fintech, Travel Tech, and Food Tech enterprises, securing leadership buy-in to close early custom solutions and PoCs.</li>
+    </ul>
+
+    <div class="job-divider"></div>
+
+    <!-- AWS -->
+    <div class="job-header">
+      <div class="job-title">Amazon Web Services (AWS), India | Business Development Lead</div>
+      <div class="job-date">2016 – 2021</div>
+    </div>
+    <ul>
+      <li><strong>Market Penetration & Cloud Adoption:</strong> Spearheaded AWS penetration into Tier-2 cities and drove early public cloud adoption across India. Led cloud engagements with growth accounts, generating $XMn MRR consumption.</li>
+      <li><strong>Sales Excellence:</strong> Managed the second-largest quota in India ($XXMn) and achieved Quota Accelerator for financial years with an average attainment of 107%.</li>
+      <li><strong>Complex Negotiations:</strong> Executed the highest number of contracts in the India DNB segment, including securing the largest multi-year contracts across India and APAC. Uniquely recognized for structuring and closing three first-ever worldwide contracts.</li>
+      <li><strong>Cross-Functional Alignment:</strong> Orchestrated synergy across technical, product, engineering, and marketing teams to accelerate customer growth.</li>
+    </ul>
+
+    <div class="job-divider"></div>
+
+    <!-- Sogeti UK -->
+    <div class="job-header">
+      <div class="job-title">Sogeti UK, United Kingdom | Managing Consultant</div>
+      <div class="job-date">2014 – 2015</div>
+    </div>
+    <ul>
+      <li><strong>Delivery Leadership:</strong> Led a consulting team to deliver a strategic System Integration (SI) project for a premier global insurance client.</li>
+      <li><strong>Strategic Negotiation:</strong> Spearheaded engagement negotiations to optimize project approaches, reducing time-to-market and enhancing competitiveness.</li>
+      <li><strong>Business Expansion:</strong> Actively acquired 'Diamond Clients,' diversifying the account portfolio and driving new business opportunities.</li>
+    </ul>
+
+    <div class="job-divider"></div>
+
+    <!-- Ernst & Young UK -->
+    <div class="job-header">
+      <div class="job-title">Ernst & Young UK, United Kingdom | Senior Consultant</div>
+      <div class="job-date">2013 – 2014</div>
+    </div>
+    <ul>
+      <li><strong>Transformation Leadership:</strong> Directed diverse client teams across Finance, Operations, and Product to deliver critical Business Transformation projects for a top 4 UK bank.</li>
+      <li><strong>Crisis Management:</strong> Established and led a Crisis Resolution team during a critical holiday period, delivering ahead of schedule with zero customer escalations.</li>
+      <li><strong>Global Stakeholder Management:</strong> Coordinated seamlessly with stakeholders, vendors, and suppliers across Europe, the Americas, and Asia.</li>
+    </ul>
+
+    <div class="job-divider"></div>
+
+    <!-- Accenture UK -->
+    <div class="job-header">
+      <div class="job-title">Accenture UK, United Kingdom | Analyst Programmer</div>
+      <div class="job-date">2010 – 2013</div>
+    </div>
+    <ul>
+      <li><strong>Integration Leadership:</strong> Managed Component Integration teams of subcontractors and internal members for the largest transformation project under the UK government’s DWP.</li>
+      <li><strong>Client Engagement:</strong> Facilitated Proof of Concept (POC) workshops for government officials on a nationally sensitive project.</li>
+    </ul>
+
+    <div class="job-divider"></div>
+
+    <!-- Steria India / Magic Software -->
+    <div class="job-header">
+      <div class="job-title">Steria India / Magic Software | Software Engineer</div>
+      <div class="job-date">2005 – 2010</div>
+    </div>
+    <ul>
+      <li><strong>Client Success (Steria):</strong> Achieved an exceptional 9/10 CSAT score as an onsite lead, directly contributing to a 5-year contract extension with a premier retail client.</li>
+      <li><strong>Quality Assurance (Magic):</strong> Executed comprehensive test suites and generated detailed defect reports for e-learning applications.</li>
+    </ul>
+
+  </div>
+
+  <!-- Education -->
+  <div class="card">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Indian Institute of Management, Calcutta:</strong> PGPEX (1-year Full-time residential MBA), 2015 – 2016</li>
+      <li><strong>Delhi University:</strong> Bachelors in Information Technology, 2000 – 2005</li>
     </ul>
   </div>
 
+  <!-- Awards, Recognitions & Certifications -->
   <div class="card">
-    <h2>AWS | Business Development Lead</h2>
-    <p><em>2016 – 2021</em></p>
+    <h2>Awards, Recognitions & Certifications</h2>
     <ul>
-      <li><strong>Market Penetration:</strong> Spearheaded AWS penetration into Tier-2 cities across India.</li>
-      <li><strong>Sales Excellence:</strong> Managed the second-largest quota in India ($XXMn), averaging 107% attainment.</li>
-      <li><strong>Complex Negotiations:</strong> Secured largest multi-year contracts across APAC, including three first-ever worldwide contracts.</li>
+      <li><strong>Sales Awards (Google):</strong> First of it’s kind deal (Large Acquisition) in Q3 2025, Leading most bookings in Digital Native Enterprise (Q3'2024); Top 3 patch for revenue/bookings (Q2'2024); MVP for largest India Workspace deal (Q4'2023); Largest BI deal (Q3'2023).</li>
+      <li><strong>Sales Awards (AWS):</strong> Best Sales-BD of the Year (2018), Earn Trust (2018), Insist on Highest Standards (2019), MVP (Q4'2017).</li>
+      <li><strong>Competitions:</strong> Winner of Google’s APAC Olympics pitch contest (AI/ML & Data Analytics track).</li>
+      <li><strong>Certifications:</strong> Google Cloud Digital Leader; AWS Solution Architect (Associate) & Cloud Practitioner.</li>
+      <li><strong>Leadership & Recognition:</strong> IIM Calcutta Placement Committee Representative; ‘Star Performer of the year’ for exceptional client contribution.</li>
     </ul>
   </div>
+
 </div>
 
 </body>
